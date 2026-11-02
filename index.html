@@ -3,52 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Уютный Свет | Магазин свечей</title>
-    <!-- Подключаем наш файл дизайна -->
+    <title>GritNail</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Шапка с названием -->
     <header>
-        <h1>🕯️ Уютный Свет</h1>
-        <p>Ароматические свечи ручной работы</p>
+        <h1>GritNail</h1>
     </header>
     
-    <div class="container">
-        <!-- Первый товар -->
-        <div class="product">
-            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=400&auto=format&fit=crop" alt="Свеча Лаванда">
-            <h2>Лавандовый вечер</h2>
-            <p>Успокаивающий аромат для идеального отдыха.</p>
-            <div class="price">1 500 ₽</div>
-            <button>В корзину</button>
-        </div>
+    <!-- Три больших блока-ссылки -->
+    <div class="menu-container">
+        
+        <!-- Блок 1: Мои работы -->
+        <a href="works.html" class="menu-card">
+            <div class="menu-text">Мои работы</div>
+        </a>
 
-        <!-- Второй товар -->
-        <div class="product">
-            <img src="https://images.unsplash.com/photo-1574620966903-12344191e23c?q=80&w=400&auto=format&fit=crop" alt="Свеча Ваниль">
-            <h2>Теплая ваниль</h2>
-            <p>Сладкий и согревающий аромат для дома.</p>
-            <div class="price">1 200 ₽</div>
-            <button>В корзину</button>
-        </div>
+        <!-- Блок 2: Цены -->
+        <a href="prices.html" class="menu-card">
+            <div class="menu-text">Цены</div>
+        </a>
 
-        <!-- Третий товар (Ваше фото) -->
-        <div class="product">
-            <img src="https://cdn.jsdelivr.net/gh/ganvalgan1990-maker/images-@main/IMG_20261102_112820.jpg" alt="Свеча Тюльпаны">
-            <h2>Весенние тюльпаны</h2>
-            <p>Нежный подарок ручной работы.</p>
-            <div class="price">1 500 ₽</div>
-            <button>В корзину</button>
-        </div>
+        <!-- Блок 3: Контакты -->
+        <a href="contacts.html" class="menu-card">
+            <div class="menu-text">Контакты</div>
+        </a>
+
     </div>
 
-    <footer>
-        <p>Свяжитесь с нами для заказа:</p>
-        <a href="https://t.me/GritNailBot">Написать в Telegram</a>
-    </footer>
+    <!-- Плавающая круглая кнопка онлайн-записи -->
+    <a href="https://t.me/GritNailBot" class="floating-btn">
+        Онлайн-<br>запись
+    </a>
 
-    <!-- Подключаем наш файл логики в самом конце -->
-    <script src="script.js"></script>
 </body>
 </html>
