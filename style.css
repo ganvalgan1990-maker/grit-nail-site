@@ -6,21 +6,22 @@
 
 body {
     font-family: "Georgia", serif;
-    background-color: #fcf8f2; /* Светлый фон */
+    background-color: #fcf8f2;
     color: #333;
 }
 
 header {
-    background-color: #5d4037; /* Коричневый цвет, как у ваших свечей */
+    background-color: #5d4037;
     color: white;
-    padding: 30px 20px;
+    padding: 20px; /* Чуть уменьшили шапку */
     text-align: center;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: normal;
     letter-spacing: 2px;
+    margin: 0;
 }
 
 /* Контейнер для трех больших кнопок */
@@ -28,22 +29,24 @@ header h1 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: calc(100vh - 80px); /* Занимает весь экран минус шапка */
 }
 
 /* Сами карточки-разделы */
 .menu-card {
     position: relative;
-    height: 40vh; /* Каждый блок занимает 40% высоты экрана */
+    flex: 1; /* Каждый блок занимает равную часть оставшегося экрана */
+    background-color: #8d6e63; /* Цвет-заглушка, пока грузится картинка */
     background-size: cover;
     background-position: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
-/* Картинки-фоны для каждого раздела */
+/* Картинки-фоны для каждого раздела (я поставил рабочие ссылки на маникюр) */
 .menu-card:nth-child(1) { background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=800&auto=format&fit=crop'); }
 .menu-card:nth-child(2) { background-image: url('https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?q=80&w=800&auto=format&fit=crop'); }
 .menu-card:nth-child(3) { background-image: url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop'); }
@@ -51,8 +54,8 @@ header h1 {
 /* Белая плашка с текстом внутри карточки */
 .menu-text {
     background-color: white;
-    padding: 20px 40px;
-    font-size: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
     color: #5d4037;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -61,10 +64,10 @@ header h1 {
 /* Круглая плавающая кнопка внизу справа */
 .floating-btn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 100px;
-    height: 100px;
+    bottom: 20px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
     background-color: #8d6e63;
     color: white;
     border-radius: 50%;
@@ -73,11 +76,12 @@ header h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-family: sans-serif;
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     border: 2px solid #5d4037;
     transition: 0.3s;
+    z-index: 10;
 }
 
 .floating-btn:hover {
