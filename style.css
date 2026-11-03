@@ -210,3 +210,62 @@ header h1 {
 .contact-item .icon {
     font-size: 24px;
 }
+/* Стили для страницы записи */
+.booking-container {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#bookingForm {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #5d4037;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #fcf8f2;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    outline: none;
+    border-color: #d84315;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #d84315;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #bf360c;
+}
