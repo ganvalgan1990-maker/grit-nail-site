@@ -120,3 +120,93 @@ header a {
 header h1 {
     font-size: 24px;
 }
+/* Стили для страницы "Контакты" */
+.contact-container {
+    padding: 20px;
+    margin-bottom: 100px; /* Чтобы кнопка записи не перекрывала контент */
+}
+
+.contact-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.contact-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #5d4037;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.map-btn {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+}
+
+.map-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.contact-links {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-links h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #5d4037;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fcf8f2;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.contact-item:hover {
+    background-color: #f5ece1;
+}
+
+.contact-item .icon {
+    font-size: 24px;
+}
