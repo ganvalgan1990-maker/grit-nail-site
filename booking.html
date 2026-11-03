@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-запись | GritNail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" style="color: white; text-decoration: none; font-size: 16px;">← Назад</a>
+        <h1>Онлайн-запись</h1>
+    </header>
+    
+    <div class="booking-container">
+        <form id="bookingForm">
+            
+            <div class="form-group">
+                <label>Ваше имя</label>
+                <input type="text" id="name" placeholder="Например, Анна" required>
+            </div>
+
+            <div class="form-group">
+                <label>Номер телефона</label>
+                <input type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+            </div>
+
+            <div class="form-group">
+                <label>Выберите услугу</label>
+                <select id="service" required>
+                    <option value="" disabled selected>Выберите из списка...</option>
+                    <option value="Маникюр">Маникюр (2 000 ₽)</option>
+                    <option value="Педикюр">Педикюр (2 500 ₽)</option>
+                    <option value="Наращивание">Наращивание (3 000 ₽)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Желаемая дата</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Желаемое время</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Записаться</button>
+        </form>
+    </div>
+
+</body>
+</html>
